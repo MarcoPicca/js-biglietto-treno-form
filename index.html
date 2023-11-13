@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-biglietto-treno-form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE-FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <div>
-        <input type="text" placeholder="km" id="km" class="km">
-        <input type="text" placeholder="age" id="age" class="age">
-        <button type="button" id="button" class="button">Invia</button>
+<body class="bg-color">
+    <div class="container">
+        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <div class="container-form">
+            <div class="little-container-form">
+                <h4 class="text-form">Inserire nome e cognome</h4>
+                <input type="text" placeholder="nome e cognome" id="name" class="name input">
+            </div>
+            <div class="little-container-form">
+                <h4 class="text-form">Inserire i km del viaggio</h4>
+                <input type="text" placeholder="km" id="km" class="km input">
+            </div>
+            <div class="little-container-form">
+                <h4 class="text-form">Inserire l'età del passeggero</h4>
+                <input type="text" placeholder="age" id="age" class="age input">
+            </div>
+        </div>
+        <button type="button" id="button" class="button">Calcola</button>
+        <input type="text" placeholder="ticket" id="ticket" class="result">
     </div>
     
 

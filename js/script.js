@@ -2,7 +2,8 @@ const buttonClick = document.querySelector('button');
 
 buttonClick.addEventListener('click', function(){
     let kmUser = document.getElementById('km').value;
-    let agePassenger = document.getElementsById('age').value;
+    let agePassenger = document.getElementById('age').value;
+    // let nameUser = document.getElementById('name').value;
 
     let realPrice = kmUser * 0.1976;
 
@@ -15,5 +16,7 @@ buttonClick.addEventListener('click', function(){
     let price = realPrice.toFixed(2);
 
     console.log(price);
+
+    document.getElementById('ticket').value = 'Il prezzo del tuo biglietto è: ' + price + '€';
 });
 
