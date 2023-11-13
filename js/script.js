@@ -1,8 +1,8 @@
 const buttonClick = document.querySelector('button');
 
 buttonClick.addEventListener('click', function(){
-    let kmUser = kmUser.className('km');
-    let agePassenger = document.getElementsById('age');
+    let kmUser = document.getElementById('km').value;
+    let agePassenger = document.getElementsById('age').value;
 
     let realPrice = kmUser * 0.1976;
 
